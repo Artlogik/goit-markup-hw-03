@@ -165,9 +165,7 @@ text-align: end;
 
 
 /*Герой*/
-.hero {
-  text-align: center;
-}
+
 
 .hero-title {
   color: #ffffff;
@@ -179,9 +177,9 @@ text-align: end;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-   letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  
+   text-align: center;
 }
 
 /* временный фон - удалить после позиционирования*/
@@ -189,10 +187,19 @@ text-align: end;
   background-color: blueviolet;
   text-align: center;
 }
+.hero-image {
+ display: flex;
+align-items: center;
+justify-content: center;
+
+height: 600px;
+background-color: var(--text-color); 
+}
 
 .hero .primary-button {
   text-align: center;
   margin-top: 30px;
+  
 }
 .primary-button {
 display: inline-block;
