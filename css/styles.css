@@ -561,7 +561,6 @@ text-decoration: none;
 .portfolio-title-hover {
 background-color: var(--accent-color);
 color: #ffffff;
-
 font-size: 18px;
 line-height: 1.56;
 }
