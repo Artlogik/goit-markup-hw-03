@@ -5,44 +5,54 @@ box-sizing: border-box;
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+box-sizing: inherit;
 }
 
 :root {
-  --primary-text-color: #212121;
-  --accent-color: #2196f3;
-  --text-color: #757575;
-  --background-grey-color: #F5F4FA;
+--primary-text-color: #212121;
+--accent-color: #2196f3;
+--text-color: #757575;
+--background-grey-color: #F5F4FA;
 }
+
 body {
-  background-color: #f000;
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-  
+background-color: #f000;
+color: var(--primary-text-color);
+font-family: Roboto, sans-serif;
+letter-spacing: 0.03em;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-   width: 1230px;
-  /*outline: 2px solid tomato;*/
+margin-left: auto;
+margin-right: auto;
+width: 1230px;
+/*outline: 2px solid tomato;*/
 }
 
 ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
+list-style: none;
+padding: 0px;
+margin: 0px;
 }
 
- h1, h2, h3, h4, h5, h6,p {
-   margin-top: 0px;
-   margin-bottom: 0px;
- } 
+h1, h2, h3, h4, h5, h6,p {
+margin-top: 0px;
+margin-bottom: 0px;
+} 
+
+.visually-hidden {
+position: absolute;
+height: 1px; 
+width: 1px;
+overflow: hidden;
+clip: rect(1px 1px 1px 1px); 
+clip: rect(1px, 1px, 1px, 1px);
+white-space: nowrap; 
+}
+
 /* Page Header*/
 .page-header {
 justify-self: start;
-
 }
  
 /*Main navigation*/
@@ -52,7 +62,6 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 }
-
 
 /*logo*/
 
@@ -389,47 +398,46 @@ margin-top: 94px;
 
 
 .footer-logo {
-    margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .footer-contacts {
-  margin-left: ;
+margin-left: ;
 }
- 
 
 .footer-text {
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 9px;
+color: #ffffff;
+font-size: 14px;
+margin-bottom: 9px;
 }
+
 .footer-text:hover {
-  color: var(--accent-color);
+color: var(--accent-color);
 }
 
 .footer-color a {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  display: flex;
-  
+color: rgba(255, 255, 255, 0.6);
+text-decoration: none;
+display: flex;
 }
+
 .footer-color h4  {
 color: #ffffff;
 margin-bottom: 20px;
 } 
 
 .middle {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .social {
-  display: flex;
-  
-}
-.social .s-element {
-  margin-right: 10px;
+display: flex;
 }
 
+.social .s-element {
+margin-right: 10px;
+}
 
 .for-mail {
 font-size: 16px;
@@ -450,10 +458,11 @@ align-items: center;
 
 margin-right: 12px;
 }
+
+
 .footer-color .logo {
 color: #ffffff;
 }
-
 
 .footer-color {
 display: flex;
@@ -483,6 +492,7 @@ justify-content:center;
 
 margin-top: 90px;
 }
+
 .button-container .element {
 margin-left: 8px;
 }
@@ -492,20 +502,20 @@ margin-left: 8px;
 color: var(--primary-text-color);
 font-weight: 500px;
 font-style: normal;
-  font-size: 16px;
-  line-height: 1.8;
-  background-color:var(--background-grey-color);
-  text-decoration: none;
-  border-radius: 4px;
+font-size: 16px;
+line-height: 1.8;
+background-color:var(--background-grey-color);
+text-decoration: none;
+border-radius: 4px;
 border: 1px solid transparent;
 
 min-width: 73px;
-  padding: 6px 22px;
+padding: 6px 22px;
 margin-bottom: 50px;
 }
 
 .button-container .element:not(:last-child) {
-  margin-right: 8px;}
+margin-right: 8px;}
 
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -517,14 +527,13 @@ border: 1px solid transparent;
 /*Элементы портфолио*/
 
 .portfolio-title {
-  color: var(--primary-text-color)
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  text-decoration: none;
-  width: 60px;
-  } 
-
+color: var(--primary-text-color)
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+text-decoration: none;
+width: 60px;
+} 
 
 .portfolio-list {
 display: flex;
@@ -539,29 +548,23 @@ margin-bottom: 30px;
 }
 
 .portfolio-list .element:nth-child(3n) {
- margin-right: 0;
+margin-right: 0;
 }
 
 .portfolio-title .descrip {
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 1.8;
-  text-decoration: none;
+color: var(--text-color);
+font-size: 16px;
+line-height: 1.8;
+text-decoration: none;
 }
+
 .portfolio-title-hover {
-  background-color: var(--accent-color);
-  color: #ffffff;
+background-color: var(--accent-color);
+color: #ffffff;
 
-  font-size: 18px;
-  line-height: 1.56;
+font-size: 18px;
+line-height: 1.56;
 }
-
-
-/*  {
-  font-size: 18px;
-  font-style: normal;
-}*/
-
 
 .portfolio-list h2 {
 font-style: normal;
